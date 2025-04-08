@@ -50,7 +50,7 @@
           border-radius: 5px;
       }
 
-      /* Mobile menu styles */
+
       .menu-toggle {
           display: none;
           font-size: 1.5em;
@@ -59,11 +59,11 @@
 
       .topnav-right {
           display: flex;
-          /* แสดงผลเสมอ */
+
           align-items: center;
-          /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+
           gap: 10px;
-          /* เพิ่มช่องว่างระหว่าง input และปุ่ม */
+
           margin-left: auto;
       }
 
@@ -88,13 +88,13 @@
 
       .topnav-right input[type="text"]:focus {
           border: 1px solid #ccc;
-          /* เปลี่ยนสีเส้นขอบเมื่อ input ถูกคลิกหรือโฟกัส */
+
           outline: none;
       }
 
       .topnav-right input[type="text"]:hover {
           border: 1px solid #aaa;
-          /* เปลี่ยนสีเส้นขอบเมื่อเมาส์ชี้ */
+
           outline: none;
       }
 
@@ -110,13 +110,13 @@
       .overlay {
           font-family: Phetsarath OT;
           text-align: center;
-          /* จัดให้อยู่ตรงกลางแนวนอน */
+
           margin: 60px auto;
-          /* จัดให้อยู่ตรงกลาง container */
+
           position: relative;
-          /* กำหนดตำแหน่งเพื่อใช้ z-index */
+
           z-index: 10;
-          /* กำหนดให้อยู่ด้านหน้าขององค์ประกอบอื่น */
+
       }
 
       .overlay {
@@ -129,7 +129,7 @@
           width: 200px;
           height: 200px;
           border-radius: 10px;
-          /* เพิ่มความโค้งมน */
+
           margin-top: -150px;
       }
 
@@ -240,35 +240,90 @@
               background-color: #333;
               position: absolute;
               top: 60px;
-              /* เพิ่มระยะห่างจากด้านบน */
               right: 10px;
-              /* ลดระยะห่างจากขอบขวา */
               border-radius: 8px;
-              /* เพิ่มความโค้งมน */
               width: 250px;
-              /* ลดความกว้าง */
               padding: 10px 0;
-              /* เพิ่ม padding ด้านใน */
-          }
-
-          nav ul li {
-              text-align: center;
-              margin: 5px 0;
-              /* ลดระยะห่างระหว่างรายการ */
-          }
-
-          nav ul li a {
-              padding: 10px 15px;
-              /* เพิ่มพื้นที่คลิก */
-              display: block;
-              /* ทำให้ลิงก์เต็มความกว้าง */
           }
 
           nav ul.active {
               display: flex;
           }
 
+          nav ul li {
+              text-align: center;
+              margin: 5px 0;
+          }
+
+          nav ul li a {
+              padding: 10px 15px;
+              display: block;
+          }
+
           .menu-toggle {
               display: block;
+          }
+      }
+
+      /* Footer styles */
+      .footer {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+          background-color: #f8f9fa;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer .img {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: #ffffff;
+          border-radius: 10px;
+          padding: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          width: 150px;
+          text-align: center;
+      }
+
+      .footer .img img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-bottom: 10px;
+      }
+
+      .footer .img button {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 15px;
+          cursor: pointer;
+          font-size: 14px;
+          transition: background-color 0.3s ease;
+      }
+
+      .footer .img button:hover {
+          background-color: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+          .footer .img {
+              width: 120px;
+          }
+
+          .footer .img img {
+              width: 80px;
+              height: 80px;
+          }
+
+          .footer .img button {
+              font-size: 12px;
+              padding: 8px 10px;
           }
       }
