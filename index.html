@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="LA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Malisa | Shop</title>
+</head>
+
+<body>
+    <nav>
+        <div><a href="#home" class="logo">Malisa | Shop</a></div>
+        <div class="topnav-right">
+            <input type="text" placeholder="ຄົ້ນຫາ">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul>
+
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div style="height: 1000px;">
+        <div class="background-img">
+            <div class="overlay">
+                <h1>Welcome to Malisa Shop</h1>
+                <h2>ມີສິນຄ້າມາກມາຍໃຫ້ເລືອກ</h2>
+                <p>ຮ້ານເຮົາມີເຄື່ອງຄຸນນະພາບກະລັນຕີ</p>
+                <p>100%</p>
+
+            </div>
+
+            <div class="img-container">
+            </div>
+
+            <div class="footer">
+                <div class="img">
+                    <img src="./img/น้ำหอมGiffarine.jpeg" alt="" srcset="">
+                    <p>ນ້ຳຫອມ | Giffarine</p>
+                    <p>3,000,000 kip</p>
+                    <button>ສັ່ງຊື້</button>
+                </div>
+                <div class="img">
+                    <img src="./img/5ee207efca8e9.jpeg" alt="" srcset="">
+                    <p>ນ້ຳຫອມ | JO MALONE</p>
+                    <p>4,000,000 kip</p>
+                    <button>ສັ່ງຊື້</button>
+                </div>
+                <div class="img">
+                    <img src="./img/th-11134207-7r98t-lq37ysunv0841b.jpeg" alt="" srcset="">
+                    <p>ນ້ຳຫອມ | COCO</p>
+                    <p>5,000,000 kip</p>
+                    <button>ສັ່ງຊື້</button>
+                </div>
+                <div class="img">
+                    <img src="./img/kudexo.jpg" alt="" srcset="">
+                    <p>ນ້ຳຫອມ | Valentino</p>
+                    <p>2,500,000 kip</p>
+                    <button>ສັ່ງຊື້</button>
+                </div>
+                <div class="img">
+                    <img src="./img/61EXt1EGWVL._AC_UF1000,1000_QL80_.jpg" alt="" srcset="">
+                    <p>ນ້ຳຫອມ | Fragrance</p>
+                    <p>1,000,000 kip</p>
+                    <button>ສັ່ງຊື້</button>
+                </div>
+                <div class="img">
+                    <img src="./img/84028-N1_01.jpg" alt="" srcset="">
+                    <p>ນ້ຳຫອມ | Giffarine</p>
+                    <p>1,500,000 kip</p>
+                    <button>ສັ່ງຊື້</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
